@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>University Library Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#seats">Reserve a Seat</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Book Availability Section -->
+        <section id="books">
+            <h2>Check Book Availability</h2>
+            <input type="text" id="searchBook" placeholder="Search for a book...">
+            <button onclick="searchBook()">Search</button>
+            <div id="loadingSpinner" style="display: none;">Loading...</div>
+            <div id="bookResult"></div>
+        </section>
+        
+
+        <!-- Seat Reservation Section -->
+        <section id="seats">
+            <h2>Reserve a Seat</h2>
+            <form id="seatForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="seatNumber">Select Seat Number:</label>
+                <select id="seatNumber">
+                    <option value="1">Seat 1</option>
+                    <option value="2">Seat 2</option>
+                    <option value="3">Seat 3</option>
+                </select>
+                <button type="submit">Reserve</button>
+            </form>
+            <div id="seatMessage"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 University Library. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
