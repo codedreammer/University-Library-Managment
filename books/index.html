@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Library Book Section</h1>
+    </header>
+    <main>
+        <section id="books">
+            <h2>Sem-1</h2>
+            <div class="book" onclick="showBookDetails('book1')">
+                <h3>Math</h3>
+            </div>
+            <div class="book" onclick="showBookDetails('book2')">
+                <h3>Electronic</h3>
+            </div>
+            <div class="book" onclick="showBookDetails('book3')">
+                <h3>Chemistry</h3>
+            </div>
+        
+            <h2>Computer</h2>
+            <div class="computer-books">
+                <div class="book" onclick="showBookDetails('book4')">
+                    <h3>Python</h3>
+                </div>
+                <div class="book" onclick="showBookDetails('book5')">
+                    <h3>DSA</h3>
+                </div>
+                <div class="book" onclick="showBookDetails('book6')">
+                    <h3>JAVA</h3>
+                </div>
+                <div class="book" onclick="showBookDetails('book7')">
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+        </section>
+            <!-- Add more book divs as needed -->
+        <section id="bookDetails" style="display: none;">
+            <h2>Book Details</h2>
+            <p id="author"></p>
+            <p id="price"></p>
+            <p id="availability"></p>
+            <button onclick="hideBookDetails()">Close</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
